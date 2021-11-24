@@ -12,17 +12,15 @@ if( url.match(/blog/) ) {
 
 function myFunc(){
 let lastUrl = url.slice(23);
-console.log(lastUrl);
-
-//var encodedString = btoa(lastUrl);
-//console.log(encodedString); // Outputs: "SGVsbG8gV29ybGQh"
 
 // Decode the String
 let decodedString = atob(lastUrl);
 forCheck = decodedString;
 let match = forCheck.substring(0, 20)
 if (match == "https://bdjob24.org/");
-    window.location.replace(decodedString);
+    window.setTimeout(function(){
+        window.location.replace(decodedString);
+        }, 3000);
 
 }
     </script>
