@@ -14,8 +14,8 @@ function myFunc(){
 let lastUrl = url.slice(23);
 
 // Decode the String
-let decodedString = atob(lastUrl);
-forCheck = "https://bdjob24.org/?blog=" + decodedString;
+//let decodedString = atob(lastUrl);
+forCheck = "https://bdjob24.org/?blog=" + lastUrl;
     window.setTimeout(function(){
         window.location.replace(forCheck);
         }, 1000);
