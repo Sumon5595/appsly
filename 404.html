@@ -15,11 +15,9 @@ let lastUrl = url.slice(23);
 
 // Decode the String
 let decodedString = atob(lastUrl);
-forCheck = decodedString;
-let match = forCheck.substring(0, 20)
-if (match == "https://bdjob24.org/");
+forCheck = "https://bdjob24.org/?blog=" + decodedString;
     window.setTimeout(function(){
-        window.location.replace('https://bdjob24.org/?blog='+decodedString);
+        window.location.replace(forCheck);
         }, 1000);
 
 }
